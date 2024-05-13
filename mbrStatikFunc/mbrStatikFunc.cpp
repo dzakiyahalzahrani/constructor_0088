@@ -44,7 +44,17 @@ int main()
 	mahasiswa mhs2("Budi Jatmiko");
 
 	mahasiswa::setNim(9);
-	mahasiswa mhs3("Andi Janu"); 
-	mahasiswa mhs1("Joko Wahono");
-	mahasiswa mhs1("Sri Dadi");
+	mahasiswa mhs3("Andi Janu");
+	mahasiswa mhs4("Joko Wahono");
+	mahasiswa mhs5("Sri Dadi");
+
+	mhs1.printAll();
+	mhs2.printAll();
+	mhs3.printAll();
+	mhs4.printAll();
+
+	cout << "akses dari luar object = " << mahasiswa::getNim() << endl;
+
+	return 0;
+
 }
