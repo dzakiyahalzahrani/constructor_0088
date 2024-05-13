@@ -1,6 +1,7 @@
 //mbrStatik
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 class Mahasiswa {
@@ -12,14 +13,14 @@ public:
 	void setID();
 
 	void printAll();
-	Mahasiswa(string pnama):nama(pnama)
+	Mahasiswa(string pnama) :nama(pnama)
 	{
 		setID();
 	}
 };
 int Mahasiswa::nim = 20;
 
-void Mahasiswa::setID();
+void Mahasiswa::setID()
 {
 	id = nim++;
 }
